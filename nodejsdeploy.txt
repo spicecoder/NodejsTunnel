@@ -1,0 +1,10 @@
+cd myapp # make changes ... git commit git push
+then when I’m ready to deploy to the server, I log into the AWS instance using vSSH and clone the git repository there
+
+mkdir myapp cd myapp git clone https://github.com:/my_name/path_to_myapp_repository
+thereafter, i can simply SSH into the server and use
+git pull
+to checkout the latest version from the repository on github, then
+
+node app.js
+to start the Node server and run my application
