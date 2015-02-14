@@ -1,10 +1,13 @@
 cd myapp # make changes ... git commit git push
-then when I’m ready to deploy to the server, I log into the AWS instance using vSSH and clone the git repository there
+then when I’m ready to deploy to the server, I log into the AWS instance using vSSH and clone the git repository there to start the Node server and run my application
 
-mkdir myapp cd myapp git clone https://github.com:/my_name/path_to_myapp_repository
-thereafter, i can simply SSH into the server and use
-git pull
-to checkout the latest version from the repository on github, then
+git clone https://github.com/spicecoder/NodejsTunnel
+
+
+
+then wecan use git pull on the server whenever you want to get the latest version from the github repository.
+
+git pull  then
+
 
 node app.js
-to start the Node server and run my application
